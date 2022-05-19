@@ -5,7 +5,6 @@ function SingleArt() {
   const [art, setArt] = useState(null);
   const {artId} = useParams();
 
-  // Fetch a random arkwork (or an arwork with an artId)
   const getArt = () => {
     fetch(
       `https://api.artic.edu/api/v1/artworks/${

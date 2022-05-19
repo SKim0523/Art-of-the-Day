@@ -1,4 +1,5 @@
 import { Form, FormControl, Button } from "react-bootstrap";
+
 const Search = (props) => {
   return (
     <>
@@ -18,6 +19,6 @@ const Search = (props) => {
       </Form>
     </>
   );
-};
+}
 
 export default Search;

@@ -1,10 +1,10 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 // Components
-import Footer from './components/Footer'
+import Footer from './components/Footer';
 //Pages
-import Main from './pages/Main'
-import Arts from './pages/Arts'
+import Main from './pages/Main';
+import Arts from './pages/Arts';
 import ArtShow from './pages/ArtShow';
 
 function App() {
