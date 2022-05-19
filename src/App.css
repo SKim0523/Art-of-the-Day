@@ -1,0 +1,287 @@
+/* Citation: pattern used for "artspage-background" and "box-1" background is a minor modification of a project done by G V Tanish Vettrivel (https://codepen.io/gvtanish/pen/WNxWXjP?editors=1100)*/ 
+
+/*NAVBAR*/
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-image: linear-gradient(#efd345, #ffef82);
+  opacity: 0.95;
+  text-align: left !important;
+}
+
+.nav-text {
+  font-size: 45px;
+  font-family: "Tangerine", cursive;
+  text-shadow: 0.3px 0.3px darkslategray;
+  color: darkslategray;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.home-icon {
+  margin-top: 5px;
+  margin-right: 20px;
+  float: right;
+  color: darkslategray;
+}
+
+/*HEADER IMAGE*/
+.header-image {
+  background-image: url("https://i.imgur.com/OwpNzng.png?2");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  text-align: center;
+  /* filter: saturate(40%); */
+  /* filter: grayscale(50%); */
+}
+
+.headerimage-text {
+  font-size: 65px;
+  font-family: "Tangerine", cursive;
+  color: white;
+  text-shadow: 1.7px 1.7px darkslategray;
+  margin: 10px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header-image2 {
+  background-image: url("https://i.imgur.com/smdDHac.png?1");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+/*SEARCH BOX*/
+.background-image {
+  background-image: url("https://i.imgur.com/1DzG66K.jpg");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Hind Siliguri", sans-serif;
+  /* filter: grayscale(30%); */
+}
+
+.searchbox-title {
+  font-size: 70px;
+  font-family: "Tangerine", cursive;
+  color: white;
+  text-shadow: 1.7px 1.7px darkslategray;
+  margin: 10px;
+}
+
+.input {
+  width: 450px;
+  height: 39px;
+  border-radius: 5px;
+  font-family: "Hind Siliguri", sans-serif;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.search-button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  font-family: "Hind Siliguri", sans-serif;
+  background-color: darkslategray;
+  color: white;
+  font-size: 20px;
+}
+
+/* Random ART DISPLAY AREA*/
+
+.random-image {
+  margin: 30px auto 0 auto;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.box-1 {
+  flex: 1;
+  margin-right: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+  border-radius: 1%;
+  box-shadow: 5px 5px 5px #e5e5e5;
+  border: solid 0.01px #d3d3d3;
+  margin: 0;
+  background-color: #ffffff;
+  background-size: 48px 48px;
+  background-image: radial-gradient(
+      transparent 20px,
+      #f6f9f9 20px,
+      #f6f9f9 24px,
+      transparent 24px
+    ),
+    radial-gradient(
+      transparent 20px,
+      #f6f9f9 20px,
+      #f6f9f9 24px,
+      transparent 24px
+    );
+  background-position: 0 0, 24px 24px;
+}
+
+.box-2 {
+  flex: 1;
+  font-family: "Hind Siliguri", sans-serif;
+  color: darkslategray;
+  font-size: 25px;
+  padding: 15px 20px 0px 20px;
+  border-radius: 1%;
+  box-shadow: 5px 5px 5px #e5e5e5;
+  border: solid 0.01px #d3d3d3;
+}
+
+hr {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #efd345;
+  height: 2px;
+}
+
+.loading-message {
+  font-family: "Tangerine", cursive;
+  color: darkslategray;
+  font-size: 70px;
+  text-align: center;
+  line-height: 400px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  background-size: 48px 48px;
+  background-image: radial-gradient(
+      transparent 20px,
+      #f6f9f9 20px,
+      #f6f9f9 24px,
+      transparent 24px
+    ),
+    radial-gradient(
+      transparent 20px,
+      #f6f9f9 20px,
+      #f6f9f9 24px,
+      transparent 24px
+    );
+  background-position: 0 0, 24px 24px;
+  height:  35vh;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.list-item {
+  font-weight: 600;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.art-detail {
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.container {
+  width: 95%;
+  margin: 30px auto 100px auto;
+}
+
+/* SEARCHED IMAGES */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 20px auto 20px auto;
+  max-width: 1700px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  border: solid 0.01px #d3d3d3;
+  border-radius: 1%;
+  box-shadow: 5px 5px 5px #e5e5e5;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.card-title {
+  color: darkslategray;
+  font-size: 25px;
+  text-align: center;
+}
+
+.artspage-background {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  background-size: 48px 48px;
+  background-image: radial-gradient(
+      transparent 20px,
+      #f6f9f9 20px,
+      #f6f9f9 24px,
+      transparent 24px
+    ),
+    radial-gradient(
+      transparent 20px,
+      #f6f9f9 20px,
+      #f6f9f9 24px,
+      transparent 24px
+    );
+  background-position: 0 0, 24px 24px;
+  height: 100%;
+}
+
+.no-results-message {
+  font-family: "Tangerine", cursive;
+  color: darkslategray;
+  font-size: 60px;
+  text-align: center;
+  line-height: 250px;
+  height: 27vh;
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  height: 90px;
+  line-height: 25px;
+  background-image: linear-gradient(#ffef82, #efd345);
+  font-size: 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  color: darkslategray;
+  margin-top: 30px;
+}
