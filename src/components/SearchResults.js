@@ -21,7 +21,7 @@ function SearchResults(props) {
           <img
             className="item card-img-top"
             src={`https://www.artic.edu/iiif/2/${art.image_id}/full/400,/0/default.jpg`}
-            alt={art.thumbnail.alt_text}
+            alt={art.thumbnail?.alt_text}
           />
           <div className="card-body">
             <h5 className="card-title">{art.title}</h5>

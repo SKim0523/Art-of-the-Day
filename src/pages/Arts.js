@@ -10,7 +10,7 @@ function Arts() {
   function handleSubmit(e) {
     e.preventDefault();
     fetch(
-      `https://api.artic.edu/api/v1/artworks/search?fields=id,alt_text,title,image_id,artist_display,style_title,medium_display,dimensions,fiscal_year&limit=50&q=${query}&query[term][is_public_domain]=true`
+      `https://api.artic.edu/api/v1/artworks/search?fields=id,thumbnail,title,image_id,artist_display,style_title,medium_display,dimensions,fiscal_year&limit=50&q=${query}&query[term][is_public_domain]=true`
     )
       .then((response) => {
         if (!response.ok) {

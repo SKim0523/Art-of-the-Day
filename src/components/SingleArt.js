@@ -9,7 +9,7 @@ function SingleArt() {
     fetch(
       `https://api.artic.edu/api/v1/artworks/${
         artId || Math.floor(Math.random() * 116127)
-      }?fields=id,alt_text,title,image_id,artist_display,style_title,medium_display,dimensions,fiscal_year&query[term][is_public_domain]=true`
+      }?fields=id,thumbnail,title,image_id,artist_display,style_title,medium_display,dimensions,fiscal_year&query[term][is_public_domain]=true`
     )
       .then((response) => {
         if (!response.ok) {
