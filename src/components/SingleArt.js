@@ -38,7 +38,7 @@ function SingleArt() {
         <img
           className="random-image"
           src={`https://www.artic.edu/iiif/2/${art.image_id}/full/600,/0/default.jpg`}
-          alt={art.alt_text}
+          alt={art.thumbnail?.alt_text}
         />
       </div>
 
