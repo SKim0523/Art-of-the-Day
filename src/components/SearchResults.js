@@ -4,13 +4,13 @@ function SearchResults(props) {
   if (!props.results)
     return (
       <p className="no-results-message">
-      Please enter a keyword to retrieve artworks.
+       Please enter a keyword to retrieve artworks.
       </p>
     );
   if (props.results.length === 0)
     return (
       <p className="no-results-message">
-        No results. Please try a different keyword.
+       No results. Please try a different keyword.
       </p>
     );
 
@@ -21,7 +21,7 @@ function SearchResults(props) {
           <img
             className="item card-img-top"
             src={`https://www.artic.edu/iiif/2/${art.image_id}/full/400,/0/default.jpg`}
-            alt={art.alt_text}
+            alt={art.thumbnail.alt_text}
           />
           <div className="card-body">
             <h5 className="card-title">{art.title}</h5>
